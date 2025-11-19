@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portal Cidade Cuiabá</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: url('cuiaba.jpg') no-repeat center center;
+      background-size: cover;
+      color: white;
+      padding: 60px 10px;
+      text-align: center;
+      border-bottom: 5px solid rgba(0, 0, 0, 0.2);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+    header h1 {
+      font-size: 2.5em;
+      margin: 0;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+      letter-spacing: 1.5px;
+      font-weight: 700;
+    }
+    header p {
+      font-size: 1.1em;
+      margin-top: 8px;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+      opacity: 0.95;
+    }
+
+    /* ---------------------------
+       NAV EM TONS DE CINZA
+    ---------------------------- */
+    nav {
+      background: #6e6e6e; /* cinza escuro igual o da sua imagem */
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      padding: 12px 25px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+    nav a {
+      color: white;
+      background: #bfbfbf; /* cinza claro dos botões */
+      padding: 6px 14px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1em;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      background: #d6d6d6;
+      color: black;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 30px auto;
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    section {
+      display: none;
+    }
+    section.active {
+      display: block;
+    }
+    h2 {
+      color: #333;
+    }
+    .live-update {
+      background: #efefef;
+      border-left: 4px solid #6e6e6e;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Portal Cidade Cuiabá</h1>
+    <p>Informação e notícias da capital mato-grossense</p>
+  </header>
+
+  <nav>
+    <a onclick="mostrar('informacoes')">Informações</a>
+    <a onclick="mostrar('noticias')">Notícias</a>
+    <a onclick="mostrar('sugestoes')">Sugestões</a>
+    <a onclick="mostrar('aovivo')">Ao Vivo</a>
+    <a onclick="mostrar('votacao')">Votação</a>
+  </nav>
+
+  <main>
+
+    <!-- NOVA SEÇÃO SOBRE O SITE -->
+    <section id="informacoes" class="active">
+      <h2>Sobre o Portal</h2>
+      <p>
+        Este site é um <strong>plebiscito digital e plataforma oficial de votação da cidade de Cuiabá</strong>.
+        Ele foi criado para oferecer um ambiente seguro, simples e acessível para que todos os cidadãos possam
+        participar das decisões públicas que influenciam diretamente o futuro da cidade.
+      </p>
+      <p>
+        Aqui, qualquer pessoa pode enviar sugestões, acompanhar notícias em tempo real, votar em propostas importantes
+        e acompanhar projetos que impactam áreas como mobilidade urbana, infraestrutura, segurança, educação e cultura.
+      </p>
+      <p>
+        Nosso objetivo é garantir que a população tenha voz ativa, permitindo que cada voto contribua para uma
+        Cuiabá mais moderna, organizada e alinhada às necessidades dos seus moradores.
+      </p>
+      <p>
+        <strong>Participar é exercer sua cidadania. Sua opinião transforma a cidade.</strong>
+      </p>
+    </section>
+
+    <section id="noticias">
+      <h2>Últimas Notícias sobre Cuiabá</h2>
+      <article>
+        <h3>Cuiabá recebe maquinários do governo do Estado</h3>
+        <p>A A Prefeitura de Cuiabá está entre as prefeituras de Mato Grosso beneficiadas pelo Governo do Estado com maquinários e cartões do Fundo de Apoio à Agricultura Familiar (Fundaaf), em entrega ocorrida na sexta-feira (14), na Arena Pantanal. Trata-se de 2 motoniveladoras, 4 retroescavadeiras e 1 trator 80 HP que vão contribuir para impulsionar a agricultura familiar.</p>
+<p>Para saber mais, acesse: <a href="https://www.cuiaba.mt.gov.br/noticias/cuiaba-recebe-maquinarios-do-governo-do-estado" target="_blank">Notícias Cuiabá</a>.
+</p>
+      </article>
+      <article>
+        <h3>Abilio alerta que obra do BRT gerará caos no Centro de Cuiabá</h3>
+        <p>Prefeito defende troca pelo ART por ser mais moderno.
+</p>
+<p> Para saber mais, acesse: <a href="https://www.folhamax.com/politica/abilio-alerta-que-obra-do-brt-gerara-caos-no-centro-de-cuiaba/522630" target="_blank">FolhaMax</a>.</p>
+      </article>
+
+	<article>
+	<h3>Líder da Stock Car se surpreende com temporal em Cuiabá e mostra nova estrutura 'destruída' em autódromo.</h3>
+	<p>O líder da BBB Stock Car Pro Series, Felipe Fraga, registrou nas redes sociais a forte chuva que atingiu Cuiabá na noite desta sexta-feira (14) e [...]</p>
+<p> Para saber mais, acesse: <a href="https://www.olhardireto.com.br/noticias/exibir.asp?id=565644&noticia=lider-da-stock-car-se-surpreende-com-temporal-em-cuiaba-e-mostra-nova-estrutura-destruida-em-autodromo&edicao=2" target="_blank">olhardireto</a>.</p>
+      </article>
+
+    </section>
+
+    <section id="sugestoes">
+
+	<h3> 
+
+      <h2>Envie sua sugestão</h2>
+
+<h3>Deixe aqui suas sugestões!/h3>
+<p>Sua opinião é essencial para aprimorarmos o desempenho e a qualidade deste site/aplicativo. Toda contribuição é bem-vinda e nos ajuda a construir uma plataforma cada vez mais eficiente, acessível e completa.</p>
+      <form id="formSugestao">
+        <label>Nome:</label><br>
+        <input type="text" id="nomeSugestao" required><br><br>
+        <label>Sugestão:</label><br>
+        <textarea id="textoSugestao" rows="4" required></textarea><br><br>
+        <button type="submit">Enviar</button>
+      </form>
+      <h3>Sugestões enviadas:</h3>
+      <ul id="listaSugestoes"></ul>
+    </section>
+
+    <section id="aovivo">
+      <h2>Notícia Ao Vivo - Cuiabá Agora</h2>
+      <div class="live-update">
+        <strong>[Ao Vivo - Cuiabá]</strong> A forte chuva desta tarde causou alagamentos em diversos pontos da cidade.
+      </div>
+    </section>
+
+    <section id="votacao">
+      <h2>Plebiscito Cidadão</h2>
+      <div class="votacao-opcao">
+        <p>1️⃣ Implantação de ciclovias na Av. do CPA</p>
+        <button onclick="votar('ciclovia')">Votar</button>
+      </div>
+      <div class="votacao-opcao">
+        <p>2️⃣ Revitalização do centro histórico</p>
+        <button onclick="votar('centro')">Votar</button>
+      </div>
+      <h3>Resultados:</h3>
+      <ul id="resultados"></ul>
+    </section>
+  </main>
+
+  <script>
+    function mostrar(id) {
+      document.querySelectorAll('section').forEach(s => s.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+
+    const form = document.getElementById('formSugestao');
+    const lista = document.getElementById('listaSugestoes');
+    const sugestoes = JSON.parse(localStorage.getItem('sugestoes')) || [];
+
+    function atualizarSugestoes() {
+      lista.innerHTML = '';
+      sugestoes.forEach(s => {
+        const li = document.createElement('li');
+        li.textContent = `${s.nome}: ${s.texto}`;
+        lista.appendChild(li);
+      });
+    }
+
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      const nome = document.getElementById('nomeSugestao').value;
+      const texto = document.getElementById('textoSugestao').value;
+      sugestoes.push({ nome, texto });
+      localStorage.setItem('sugestoes', JSON.stringify(sugestoes));
+      atualizarSugestoes();
+      form.reset();
+    });
+    atualizarSugestoes();
+
+    const resultados = JSON.parse(localStorage.getItem('votos')) || { ciclovia: 0, centro: 0 };
+
+    function votar(opcao) {
+      resultados[opcao]++;
+      localStorage.setItem('votos', JSON.stringify(resultados));
+      mostrarResultados();
+    }
+
+    function mostrarResultados() {
+      const ul = document.getElementById('resultados');
+      ul.innerHTML = `
+        <li>Ciclovias: ${resultados.ciclovia}</li>
+        <li>Centro histórico: ${resultados.centro}</li>
+      `;
+    }
+
+    mostrarResultados();
+  </script>
+</body>
+</html>
